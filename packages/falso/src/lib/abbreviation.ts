@@ -1,5 +1,5 @@
-import { fake, FakeOptions } from './core/core';
 import { data } from './abbreviation.json';
+import { fake, FakeOptions } from './core/core';
 
 /**
  * Generate a random abbreviation.
@@ -16,5 +16,6 @@ import { data } from './abbreviation.json';
  *
  */
 export function randAbbreviation<O extends FakeOptions = never>(options?: O) {
+  console.log('coucou');
   return fake(data, options);
 }
